@@ -35,7 +35,8 @@ def main():
     run_command("lsblk")
 
     # Paso 5: Utilizar rsync para sincronizar los discos
-    source = "/"
+    # Verificar origen de los datos
+    source = "/" # Cambiar este valor para copiar un segundo disco
     destination = f"{mount_point}/"
     print(f"Sincronizando archivos de {source} a {destination} excluyendo /mnt")
     run_command(f"sudo rsync -aAXv --progress --exclude=/mnt {source} {destination}")

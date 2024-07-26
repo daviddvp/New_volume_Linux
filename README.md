@@ -27,6 +27,12 @@ Execute the script
     ./run_scripts.sh
 ```
 
+If you have problemes with Python
+```bash
+    ./main.sh
+```
+
+
 ## Authors
 
 - [@daviddvp](https://github.com/daviddvp)

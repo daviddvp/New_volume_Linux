@@ -33,7 +33,7 @@ fi
 # Verificar si pip3 está instalado
 print_message "34" "Verificando si pip3 está instalado..."
 if command -v pip3 &>/dev/null; then
-    PIP_VERSION=$(pip3 --version)
+    PIP_VERSION=$(python3-pip --version)
     print_message "32" "pip3 ya está instalado: $PIP_VERSION"
 else
     print_message "33" "pip3 no está instalado. Procediendo con la instalación..."
@@ -42,7 +42,7 @@ else
     
     # Verificar la instalación
     if command -v pip3 &>/dev/null; then
-        PIP_VERSION=$(pip3 --version)
+        PIP_VERSION=$(python3-pip --version)
         print_message "32" "pip3 ha sido instalado correctamente: $PIP_VERSION"
     else
         print_message "31" "Error: pip3 no se pudo instalar."
